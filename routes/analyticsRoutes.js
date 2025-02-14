@@ -146,4 +146,4 @@ router.get('/:alias', (req, res) => {
     res.json({ totalClicks, uniqueUsers, clicksByDate, osType, deviceType });
 });
 
-module.exports = router;
+export default router;

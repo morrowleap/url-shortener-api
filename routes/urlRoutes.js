@@ -68,4 +68,4 @@ router.get("/shorten/:alias", (req, res) => {
   res.redirect(data.longUrl);
 });
 
-module.exports = router;
+export default router;

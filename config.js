@@ -4,4 +4,4 @@ function getBaseUrl(req) {
   return req.protocol + '://' + req.get('host');
 }
 
-module.exports = { store, getBaseUrl };
+export { store, getBaseUrl };
