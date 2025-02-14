@@ -21,6 +21,6 @@ app.get('/', (req, res) => {
 
 app.use('/api/url', urlRoutes);
 app.use('/api/analytics', analyticsRoutes);
-app.use('/api/auth', authRoutes);
+// app.use('/api/auth', authRoutes);
 
 app.listen(3000, () => console.log('Server running on port 3000'));
