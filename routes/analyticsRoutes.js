@@ -1,6 +1,7 @@
 const express = require('express');
-const router = express.Router();
 const { getBaseUrl, store } = require('../config');
+
+const router = express.Router();
 
 // const { isAuthenticated } = require('../auth/authMiddleware');
 // router.use(isAuthenticated);

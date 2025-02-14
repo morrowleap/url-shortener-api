@@ -1,6 +1,8 @@
 const express = require("express");
-const router = express.Router();
+const { nanoid } = await import("nanoid");
 const { getBaseUrl, store } = require('../config');
+
+const router = express.Router();
 
 // const { isAuthenticated } = require("../auth/authMiddleware");
 // router.use(isAuthenticated);
@@ -8,7 +10,6 @@ const { getBaseUrl, store } = require('../config');
 // Create Short URL API
 router.post("/shorten", async (req, res, next) => {
   try {
-    const { nanoid } = await import("nanoid");
     const baseUrl = getBaseUrl(req);
     const { longUrl, customAlias, topic } = req.body;
     if (!longUrl) return res.status(400).json({ error: "longUrl required" });
