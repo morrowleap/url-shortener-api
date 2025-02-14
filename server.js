@@ -1,7 +1,7 @@
 const express = require('express');
 const passport = require('passport');
 const session = require('express-session');
-require('./passport-setup');
+// require('./auth/passport-setup');
 const useragent = require('express-useragent');
 const app = express();
 

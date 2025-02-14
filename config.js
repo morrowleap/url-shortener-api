@@ -1,9 +1,7 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
 const store = {}; // Global shared store
 
-module.exports = {
-  baseUrl: process.env.BASE_URL,
-  store,
-};
+function getBaseUrl(req) {
+  return req.protocol + '://' + req.get('host');
+}
+
+module.exports = { store, getBaseUrl };

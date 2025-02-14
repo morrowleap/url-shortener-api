@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { baseUrl, store } = require('../config');
-// const { isAuthenticated } = require('../authMiddleware');
+const { getBaseUrl, store } = require('../config');
 
+// const { isAuthenticated } = require('../auth/authMiddleware');
 // router.use(isAuthenticated);
 
 // Get Overall Analytics API
@@ -73,6 +73,7 @@ router.get('/overall', (req, res) => {
 
 // Get Topic-Based Analytics API
 router.get('/topic/:topic', (req, res) => {
+    const baseUrl = getBaseUrl(req);
     const topic = req.params.topic;
     let totalClicks = 0;
     const allUniqueUsers = new Set();
