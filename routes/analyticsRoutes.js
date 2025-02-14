@@ -1,5 +1,5 @@
-const express = require('express');
-const { getBaseUrl, store } = require('../config');
+import express from 'express';
+import { getBaseUrl, store } from '../config.js';
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 const express = require("express");
-const { nanoid } = await import("nanoid");
+import { nanoid } from "nanoid";
 const { getBaseUrl, store } = require('../config');
 
 const router = express.Router();
