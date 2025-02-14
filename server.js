@@ -1,15 +1,15 @@
 const express = require('express');
-const passport = require('passport');
-const session = require('express-session');
+// const passport = require('passport');
+// const session = require('express-session');
 // require('./auth/passport-setup');
-const useragent = require('express-useragent');
+// const useragent = require('express-useragent');
 const app = express();
 
 app.use(express.json());
-app.use(useragent.express());
-app.use(session({ secret: 'secret', resave: false, saveUninitialized: true }));
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(useragent.express());
+// app.use(session({ secret: 'secret', resave: false, saveUninitialized: true }));
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 const urlRoutes = require('./routes/urlRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
