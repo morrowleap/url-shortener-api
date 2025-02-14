@@ -1,6 +1,5 @@
-const express = require("express");
-import { nanoid } from "nanoid";
-const { getBaseUrl, store } = require('../config');
+import express from "express";
+import { store, getBaseUrl } from "../config.js";
 
 const router = express.Router();
 
