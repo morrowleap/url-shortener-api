@@ -1,5 +1,5 @@
 import express from "express";
-import { store, getBaseUrl } from "../config.js";
+import { store, getBaseUrl } from "../config/config.js";
 
 const router = express.Router();
 
