@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const { baseUrl, store } = require('../config');
-const { isAuthenticated } = require('../authMiddleware');
+// const { isAuthenticated } = require('../authMiddleware');
 
-router.use(isAuthenticated);
+// router.use(isAuthenticated);
 
 // Get Overall Analytics API
 router.get('/overall', (req, res) => {

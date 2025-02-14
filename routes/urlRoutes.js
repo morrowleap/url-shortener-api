@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { baseUrl, store } = require("../config");
-const { isAuthenticated } = require("../authMiddleware");
+// const { isAuthenticated } = require("../authMiddleware");
 
-router.use(isAuthenticated);
+// router.use(isAuthenticated);
 
 // Create Short URL API
 router.post("/shorten", async (req, res, next) => {
